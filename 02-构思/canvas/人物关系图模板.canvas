@@ -1,0 +1,36 @@
+{
+	"nodes": [
+		{"id": "usage", "type": "text", "x": -1200, "y": -1020, "width": 960, "height": 260, "color": "6", "text": "## 人物关系图模板\n1. 复制本文件到当前书的构思目录，重命名为《书名》-人物关系.canvas\n2. 把示例卡替换成你的人物卡（文字内可贴 Obsidian 附件图片）\n3. 阵营分组可增删；人物卡放在对应分组框内即归属该阵营\n4. 连线：右键卡片拖到另一张卡；双击连线加标签（敌对/师徒/私情/秘密…）\n5. 红线=敌对，绿线=拉拢/恩义，紫线=秘密/不为人知\n6. 密度自检：任意两张卡之间说得出一条关系吗？说不出→删人或加线\n7. 同步维护 02-构思/人物关系册.md（图管看，册管查）"},
+		{"id": "groupA", "type": "group", "x": -1200, "y": -700, "width": 520, "height": 620, "color": "4", "label": "阵营：主角方"},
+		{"id": "groupB", "type": "group", "x": -480, "y": -700, "width": 520, "height": 620, "color": "1", "label": "阵营：对手方"},
+		{"id": "groupC", "type": "group", "x": 240, "y": -700, "width": 520, "height": 620, "color": "3", "label": "阵营：第三方 / 待收服"},
+		{"id": "p1", "type": "text", "x": -1140, "y": -640, "width": 220, "height": 160, "text": "### 主角\n- 一句话人设：\n- 隐藏身份：\n- 金手指：\n- 小传链接：[[人物小传-主角]]"},
+		{"id": "p2", "type": "text", "x": -880, "y": -640, "width": 220, "height": 160, "text": "### 女护卫（示例）\n- 一句话人设：强大、话少、高冷\n- 知道主角的秘密\n- 前期武力保障"},
+		{"id": "p3", "type": "text", "x": -1140, "y": -440, "width": 220, "height": 160, "text": "### 旧臣 A\n- 功能：待营救/相认爽点\n- 与主角的旧关系："},
+		{"id": "p4", "type": "text", "x": -880, "y": -440, "width": 220, "height": 160, "text": "### 旧臣 B\n- 功能：待收服\n- 现状：被囚/潜伏"},
+		{"id": "e1", "type": "text", "x": -420, "y": -640, "width": 220, "height": 160, "color": "1", "text": "### 反派头目\n- 功能：日常冲突来源\n- 与主角互为猎物"},
+		{"id": "e2", "type": "text", "x": -160, "y": -640, "width": 220, "height": 160, "text": "### 爪牙\n- 功能：前期对手戏\n- 挂靠组织："},
+		{"id": "e3", "type": "text", "x": -420, "y": -440, "width": 220, "height": 160, "color": "1", "text": "### 幕后/太后\n- 功能：血压钩子或终局对手\n- 不能太快被干掉"},
+		{"id": "e4", "type": "text", "x": -160, "y": -440, "width": 220, "height": 160, "color": "4", "text": "### 可策反者\n- 功能：渗透切入点\n- 内部矛盾：与其上头的裂痕"},
+		{"id": "n1", "type": "text", "x": 300, "y": -640, "width": 220, "height": 160, "color": "4", "text": "### 中立大人物\n- 功能：人情链/靠山撑腰\n- 欠主角人情的方式："},
+		{"id": "n2", "type": "text", "x": 560, "y": -640, "width": 220, "height": 160, "text": "### 待收服对象\n- 功能：收人剧情主体\n- 收服障碍："},
+		{"id": "n3", "type": "text", "x": 300, "y": -440, "width": 220, "height": 160, "text": "### 感情线候选\n- 修罗场成员\n- 马甲状态：知不知道主角身份"},
+		{"id": "n4", "type": "text", "x": 560, "y": -440, "width": 220, "height": 160, "color": "6", "text": "### 神秘人\n- 功能：悬疑线\n- 秘密：与幕后的旧账"}
+	],
+	"edges": [
+		{"id": "edge1", "fromNode": "p1", "fromSide": "right", "toNode": "p2", "toSide": "left", "color": "6", "label": "秘密·依附"},
+		{"id": "edge2", "fromNode": "p1", "fromSide": "top", "toNode": "e1", "toSide": "top", "color": "1", "label": "敌对·互为猎物"},
+		{"id": "edge3", "fromNode": "p1", "fromSide": "right", "toNode": "e4", "toSide": "bottom", "color": "4", "label": "拉拢·策反"},
+		{"id": "edge4", "fromNode": "p1", "fromSide": "bottom", "toNode": "p3", "toSide": "top", "label": "旧识·君臣"},
+		{"id": "edge5", "fromNode": "p1", "fromSide": "right", "toNode": "n1", "toSide": "left", "color": "4", "label": "人情链"},
+		{"id": "edge6", "fromNode": "p1", "fromSide": "right", "toNode": "n2", "toSide": "left", "label": "收服"},
+		{"id": "edge7", "fromNode": "p1", "fromSide": "right", "toNode": "n3", "toSide": "left", "color": "3", "label": "感情线"},
+		{"id": "edge8", "fromNode": "e3", "fromSide": "left", "toNode": "e1", "toSide": "top", "label": "驱动·纵容"},
+		{"id": "edge9", "fromNode": "e1", "fromSide": "bottom", "toNode": "e2", "toSide": "top", "label": "驱使"},
+		{"id": "edge10", "fromNode": "e1", "fromSide": "right", "toNode": "e4", "toSide": "top", "label": "貌合神离", "color": "1"},
+		{"id": "edge11", "fromNode": "p2", "fromSide": "right", "toNode": "e2", "toSide": "left", "color": "1", "label": "敌对·武力线"},
+		{"id": "edge12", "fromNode": "p3", "fromSide": "right", "toNode": "n2", "toSide": "bottom", "label": "旧识"},
+		{"id": "edge13", "fromNode": "n4", "fromSide": "left", "toNode": "e3", "toSide": "right", "color": "6", "label": "秘密·不为人知"},
+		{"id": "edge14", "fromNode": "e4", "fromSide": "right", "toNode": "n1", "toSide": "bottom", "label": "牵线（可选）"}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"nodes": [
+		{"id": "usage", "type": "text", "x": -1560, "y": -1000, "width": 620, "height": 420, "color": "6", "text": "## 大纲结构图模板\n1. 复制本文件到当前书的构思目录，重命名为《书名》-大纲结构.canvas\n2. 一列 = 一个单元（6~8万字，含4~5个桥段）；从左到右按时间排\n3. 卡片颜色即类型：\n   🟩 绿 = 收人/升级　🟥 红 = 杀人/战斗\n   🟨 黄 = 副本事件　🟪 紫 = 陷害算计\n4. 视觉检查三件事：\n   - 升级:战斗 ≈ 2:1（红卡约占三分之一）\n   - 张弛交替（卡片内标注，连续 3 个同氛围=警报）\n   - 相邻卡片尽量有连线（关联设计=养书）\n5. 前 10 万字 = 开头加速区：10 章一个剧情\n6. 数据源：02-构思/大纲排布模板.md；本图是它的可视化\n7. 100 万字后的大纲调整直接在图上改，并回排布表记调整日志"},
+		{"id": "bossline", "type": "text", "x": -1560, "y": -540, "width": 620, "height": 120, "color": "1", "text": "### 主线检查\n- 终局 boss 在开头章节亮过相\n- 第一卷 boss 在开头章节亮过相\n- 每张卡「推进」栏不为空"},
+		{"id": "u1", "type": "text", "x": -880, "y": -620, "width": 260, "height": 240, "color": "4", "text": "### 单元 1（开头加速区）\n- 矛盾#：\n- 类型：收人\n- 地图：\n- 张/弛：弛\n- 推进：\n- 预计 10 章完成"},
+		{"id": "u2", "type": "text", "x": -560, "y": -620, "width": 260, "height": 240, "color": "4", "text": "### 单元 2\n- 矛盾#：\n- 类型：收人\n- 地图：\n- 张/弛：张\n- 推进：\n- 关联：与单元1共享事件"},
+		{"id": "u3", "type": "text", "x": -240, "y": -620, "width": 260, "height": 240, "color": "1", "text": "### 单元 3（第一卷 boss）\n- 矛盾#：\n- 类型：杀人\n- 地图：\n- 张/弛：张\n- 推进：除掉爪牙/小boss\n- 兑现开头的目标感"},
+		{"id": "u4", "type": "text", "x": 80, "y": -620, "width": 260, "height": 240, "color": "4", "text": "### 单元 4\n- 矛盾#：\n- 类型：收人\n- 地图：\n- 张/弛：弛\n- 推进："},
+		{"id": "u5", "type": "text", "x": 400, "y": -620, "width": 260, "height": 240, "color": "3", "text": "### 单元 5\n- 矛盾#：\n- 类型：副本\n- 地图：\n- 张/弛：张\n- 推进：料敌于先的舞台"},
+		{"id": "u6", "type": "text", "x": 720, "y": -620, "width": 260, "height": 240, "color": "4", "text": "### 单元 6\n- 矛盾#：\n- 类型：收人\n- 地图：\n- 张/弛：弛\n- 推进："},
+		{"id": "u7", "type": "text", "x": 1040, "y": -620, "width": 260, "height": 240, "color": "1", "text": "### 单元 7\n- 矛盾#：\n- 类型：杀人\n- 地图：\n- 张/弛：张\n- 推进："},
+		{"id": "u8", "type": "text", "x": 1360, "y": -620, "width": 260, "height": 240, "color": "2", "text": "### 单元 8 ……（向右复制扩展）\n- 矛盾#：\n- 类型：\n- 地图：\n- 张/弛：\n- 推进："}
+	],
+	"edges": [
+		{"id": "dedge1", "fromNode": "u1", "fromSide": "right", "toNode": "u2", "toSide": "left", "label": "关联：同事件上半场"},
+		{"id": "dedge2", "fromNode": "u2", "fromSide": "right", "toNode": "u3", "toSide": "left", "color": "1", "label": "升级→战斗（2:1 兑现）"},
+		{"id": "dedge3", "fromNode": "u3", "fromSide": "right", "toNode": "u4", "toSide": "left", "label": "善后·新钩子"},
+		{"id": "dedge4", "fromNode": "u4", "fromSide": "right", "toNode": "u5", "toSide": "left"},
+		{"id": "dedge5", "fromNode": "u5", "fromSide": "right", "toNode": "u6", "toSide": "left", "label": "副本收获→人脉"},
+		{"id": "dedge6", "fromNode": "u6", "fromSide": "right", "toNode": "u7", "toSide": "left", "color": "1"},
+		{"id": "dedge7", "fromNode": "u7", "fromSide": "right", "toNode": "u8", "toSide": "left"}
+	]
+}

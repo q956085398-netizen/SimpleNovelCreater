@@ -1,0 +1,26 @@
+{
+	"nodes": [
+		{"id": "usage", "type": "text", "x": -1200, "y": -1060, "width": 900, "height": 240, "color": "6", "text": "## 组织架构图模板\n1. 复制本文件到当前书的构思目录，重命名为《书名》-组织-（组织名）.canvas\n2. 一个重要组织一张图；配合 02-构思/组织设定模板.md 使用\n3. 设计要点：\n   - 先想功能再想名号（组织是剧情的批量生产者）\n   - 至少两个派系（铁板一块没法被架空）\n   - 实力展示留底（每次组织出手记一笔，防前后矛盾被读者抓）\n4. 主角的渗透线用紫/绿标出：从哪个裂痕切进去"},
+		{"id": "boss", "type": "text", "x": -160, "y": -760, "width": 320, "height": 160, "color": "1", "text": "### 组织顶层（终局对手）\n- 姓名/职位：\n- 对组织的掌控方式：\n- 与主角的终局冲突："},
+		{"id": "midA", "type": "text", "x": -560, "y": -500, "width": 260, "height": 160, "text": "### 中层 A（头目心腹）\n- 立场/派系：\n- 功能：日常冲突来源\n- 与顶层的裂痕："},
+		{"id": "midB", "type": "text", "x": 120, "y": -500, "width": 260, "height": 160, "text": "### 中层 B（另一派系）\n- 立场/派系：\n- 功能：可策反对象\n- 与顶层的裂痕："},
+		{"id": "low1", "type": "text", "x": -880, "y": -240, "width": 220, "height": 140, "text": "### 爪牙 1\n- 功能：前期对手戏\n- 出场单元："},
+		{"id": "low2", "type": "text", "x": -600, "y": -240, "width": 220, "height": 140, "text": "### 爪牙 2\n- 功能：\n- 出场单元："},
+		{"id": "low3", "type": "text", "x": 40, "y": -240, "width": 220, "height": 140, "text": "### 爪牙 3\n- 功能：\n- 出场单元："},
+		{"id": "low4", "type": "text", "x": 320, "y": -240, "width": 220, "height": 140, "text": "### 外围线人/暗桩\n- 功能：情报网的缺口\n- 谁能撬动他："},
+		{"id": "hero", "type": "text", "x": -1040, "y": -760, "width": 280, "height": 160, "color": "5", "text": "### 主角（潜入者）\n- 伪装身份：\n- 渗透路线：从中层 B 的裂痕切入\n- 阶段目标：借派系斗争架空本组织"},
+		{"id": "check", "type": "text", "x": 240, "y": -760, "width": 340, "height": 160, "color": "3", "text": "### 实力对账表（写作时维护）\n- 第__章 组织出手：\n- 第__章 组织出手：\n- （读者记得住前后矛盾，尤其战斗力）"}
+	],
+	"edges": [
+		{"id": "oedge1", "fromNode": "boss", "fromSide": "left", "toNode": "midA", "toSide": "top", "label": "驱使·掌控"},
+		{"id": "oedge2", "fromNode": "boss", "fromSide": "right", "toNode": "midB", "toSide": "top", "label": "貌合神离"},
+		{"id": "oedge3", "fromNode": "midA", "fromSide": "bottom", "toNode": "low1", "toSide": "top", "label": "驱使"},
+		{"id": "oedge4", "fromNode": "midA", "fromSide": "bottom", "toNode": "low2", "toSide": "top", "label": "驱使"},
+		{"id": "oedge5", "fromNode": "midB", "fromSide": "bottom", "toNode": "low3", "toSide": "top", "label": "驱使"},
+		{"id": "oedge6", "fromNode": "midB", "fromSide": "bottom", "toNode": "low4", "toSide": "top", "label": "经营"},
+		{"id": "oedge7", "fromNode": "hero", "fromSide": "right", "toNode": "midB", "toSide": "left", "color": "4", "label": "渗透·策反"},
+		{"id": "oedge8", "fromNode": "hero", "fromSide": "top", "toNode": "boss", "toSide": "left", "color": "1", "label": "终局对手"},
+		{"id": "oedge9", "fromNode": "hero", "fromSide": "bottom", "toNode": "low4", "toSide": "top", "color": "6", "label": "暗中撬动"},
+		{"id": "oedge10", "fromNode": "midA", "fromSide": "right", "toNode": "midB", "toSide": "left", "color": "1", "label": "派系倾轧（渗透点）"}
+	]
+}
