@@ -30,7 +30,7 @@ body { font-family: var(--sans); color: var(--text); background: var(--paper); }
 }
 .brand { font-size: 16px; letter-spacing: 1px; white-space: nowrap; }
 .brand em { font-style: normal; font-size: 12px; opacity: .55; }
-.seal {
+.brand-seal {
   display: inline-flex; align-items: center; justify-content: center;
   width: 26px; height: 26px; margin-right: 8px;
   background: var(--seal); color: #fff; border-radius: 4px;
@@ -74,6 +74,7 @@ button.btn {
   font-family: var(--sans); font-size: 13px; cursor: pointer;
   background: var(--ink); color: #f2ede1; border: none; border-radius: 6px;
   padding: 8px 14px; transition: .15s;
+  white-space: nowrap; flex: none; line-height: 1.4;
 }
 button.btn:hover { background: var(--ink-deep); }
 button.btn.seal { background: var(--seal); }

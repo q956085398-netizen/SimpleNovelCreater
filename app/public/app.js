@@ -129,7 +129,7 @@ async function renderHome() {
 }
 async function createBook() {
   const name = $('#newBook').value.trim();
-  if (!name) return;
+  if (!name) { toast('请先输入书名'); $('#newBook').focus(); return; }
   try { await api('POST', '/api/books', { name }); toast(`《${name}》已创建`); nav(`/b/${encodeURIComponent(name)}/素材`); }
   catch (e) { toast(e.message); }
 }

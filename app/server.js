@@ -181,7 +181,7 @@ function serveStatic(req, res, urlPath) {
   if (!fp.startsWith(PUB)) { res.writeHead(403); return res.end('forbidden'); }
   fs.readFile(fp, (err, data) => {
     if (err) { res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }); return res.end('404'); }
-    res.writeHead(200, { 'Content-Type': MIME[path.extname(fp).toLowerCase()] || 'application/octet-stream' });
+    res.writeHead(200, { 'Content-Type': MIME[path.extname(fp).toLowerCase()] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
     res.end(data);
   });
 }
