@@ -1,0 +1,6 @@
+# 用户数据不入库：小说、构思、素材都是私人内容
+作品/
+app/作品/
+node_modules/
+*.log
+.DS_Store
